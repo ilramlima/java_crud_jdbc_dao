@@ -1,6 +1,6 @@
 # ☕ Java CRUD com DAO, JDBC e Arquitetura em Camadas
 
-> Projeto educacional focado em boas práticas de arquitetura de software em Java.
+> Projeto educacional focado na criação do CRUD com boas práticas de arquitetura de software em Java.
 
 ---
 
@@ -8,6 +8,7 @@
 
 Este projeto consiste no desenvolvimento de um sistema CRUD (**Create, Read, Update, Delete**) em Java com o objetivo de consolidar conhecimentos em:
 
+- Orientada a Objetos (POO)
 - JDBC
 - Padrão DAO (Data Access Object)
 - Arquitetura em Camadas
@@ -15,7 +16,7 @@ Este projeto consiste no desenvolvimento de um sistema CRUD (**Create, Read, Upd
 - Modelagem de dados
 - Boas práticas de organização de código
 
-Mais do que apenas salvar dados em um banco, o foco principal foi aprender **como estruturar um sistema de forma escalável e manutenível**, aproximando-se da arquitetura utilizada em aplicações profissionais.
+Mais do que apenas salvar dados em um banco, o foco também foi aprender **como estruturar um sistema de forma escalável e manutenível**, aproximando-se da arquitetura utilizada em aplicações profissionais.
 
 O sistema utiliza **PostgreSQL** como banco de dados e implementa uma separação clara entre domínio, acesso a dados e infraestrutura.
 
@@ -51,7 +52,7 @@ src/
  │  
  ├── bancodedados/  
  │    ├── ConexaoBancoDeDados.java  
- │    └── DbException.java  
+ │    └── BdException.java  
  │  
  └── servicos/notificacao/  
       └── NotificacaoBancoDeDados.java  
@@ -133,9 +134,10 @@ Centraliza recursos técnicos do sistema:
 
 Arquivo `datasource.properties`:
 
-dburl=jdbc:postgresql://localhost:5432/teste  
-user=postgres  
-password=123  
+user=postgres
+password=senharoot
+db.url=jdbc:postgresql://localhost:5432/cadastrovendedor
+ssl=false
 
 Permite alterar o banco sem recompilar o projeto.
 
