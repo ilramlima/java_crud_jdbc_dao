@@ -30,7 +30,7 @@ O projeto foi desenvolvido para entender na prática conceitos fundamentais do C
 
 ## 📊 Diagrama de Classe
 
-![[CRUD JDBC DAO.png]]
+<img width="2498" height="3057" alt="CRUD JDBC DAO" src="https://github.com/user-attachments/assets/abadb911-270b-4ba0-8ecb-dffcfb1b1d45" />
 
 ---
 
